@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--CircleProgressView Color-->
+    <color name="circle_progress_default_base_progress_color">#E0E0E0</color>//默认base progress color
+
 </resources>
