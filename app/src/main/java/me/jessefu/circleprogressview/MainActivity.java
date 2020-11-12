@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
@@ -20,7 +24,24 @@ public class MainActivity extends AppCompatActivity {
     private void initViews() {
         mCircleProgressView = findViewById(R.id.cpv_am);
 
+        List<CircleProgressView.ProgressVO> datas = new ArrayList<>();
 
-//        mCircleProgressView.setData();
+        CircleProgressView.ProgressVO vo0 = new CircleProgressView.ProgressVO();
+        vo0.id = 0;
+        vo0.progress = 75;
+        vo0.color = R.color.Purple500;
+
+        CircleProgressView.ProgressVO vo1 = new CircleProgressView.ProgressVO();
+        vo1.id = 1;
+        vo1.progress = 50;
+        vo1.color = R.color.Yellow500;
+
+        CircleProgressView.ProgressVO vo2 = new CircleProgressView.ProgressVO();
+        vo1.id = 2;
+        vo1.progress = 20;
+        vo1.color = R.color.Green500;
+
+        Collections.addAll(datas, vo0, vo1, vo2);
+        mCircleProgressView.setData(datas);
     }
 }

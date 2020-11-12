@@ -96,9 +96,14 @@ public class CircleProgressView extends View {
         /**绘制base progress*/
         canvas.drawArc(rectF, mStartAngle, 360, false, mPaint);
 
+        for (ProgressVO item :
+                mDatas) {
+            mPaint.setColor(getResources().getColor(item.color));
+            canvas.drawArc(rectF, mStartAngle, item.progress / mTotalProgress * 360, false, mPaint);
+        }
     }
 
-    public class ProgressVO implements Comparable{
+    public static class ProgressVO implements Comparable{
         int id;
         float progress;
         @ColorRes int color;
