@@ -1,9 +1,13 @@
 <RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <me.jessefu.circleprogressview.CircleProgressView
         android:id="@+id/cpv_am"
         android:layout_width="400dp"
         android:layout_height="400dp"
-        android:layout_centerInParent="true"></me.jessefu.circleprogressview.CircleProgressView>
+        android:layout_centerInParent="true"
+        app:circle_stroke_width="25dp"
+        app:circle_radius="120dp"
+        app:start_angle="-90"></me.jessefu.circleprogressview.CircleProgressView>
 </RelativeLayout>

@@ -29,17 +29,17 @@ public class MainActivity extends AppCompatActivity {
         CircleProgressView.ProgressVO vo0 = new CircleProgressView.ProgressVO();
         vo0.id = 0;
         vo0.progress = 75;
-        vo0.color = R.color.Purple500;
+        vo0.color = R.color.circle_progress_orange;
 
         CircleProgressView.ProgressVO vo1 = new CircleProgressView.ProgressVO();
         vo1.id = 1;
         vo1.progress = 50;
-        vo1.color = R.color.Yellow500;
+        vo1.color = R.color.circle_progress_red;
 
         CircleProgressView.ProgressVO vo2 = new CircleProgressView.ProgressVO();
-        vo1.id = 2;
-        vo1.progress = 20;
-        vo1.color = R.color.Green500;
+        vo2.id = 2;
+        vo2.progress = 20;
+        vo2.color = R.color.circle_progress_pruple;
 
         Collections.addAll(datas, vo0, vo1, vo2);
         mCircleProgressView.setData(datas);
